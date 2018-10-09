@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Picturegram</title>
+
+	<link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAADc3NwAAAAAAENDQwD///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAERIiESIREhERIwAiMyIjIRESMzMzMzMhERIzMzMzMyERIjMzMjMzIRICMzMgIzMhEjMzMzIzMhERIzMzMzMyEREjMyIjMzIRESMzMzMzMhERIzIzMjMyEREjMzMzMzIRERIzMzMzIREREjMzMzMhERERIiIiIhERERERERERERHjOwAAwAEAAOABAADgAQAAwAEAAIABAACAAwAAwAMAAMADAADAAwAAwAMAAMADAADgBwAA4AcAAPAPAAD//wAA" rel="icon" type="image/x-icon" />
+
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+
+	<style type="text/css">
+
+	* {
+
+		box-sizing: border-box;
+
+		}
+
+	h1 {
+
+		text-align: center;
+		margin: 15px;
+		font-family: Lobster;
+		font-size: 40px
+
+		}
+
+	h1:hover {
+
+
+
+	}
+		
+	img {
+
+		border: 6px solid black;
+		border-image-source: linear-gradient(360deg, #000000, #494949, #5e5e5e, #707070);
+		border-image-slice: 1;
+
+		}
+
+	img:hover {
+
+		border: 6px solid black;
+		border-image-source: linear-gradient(360deg, #411644, #311544, #251544, #181544);
+		border-image-slice: 1;
+		cursor: pointer;
+
+			}
+
+	body {
+
+		background: #897982;
+
+		}
+
+	#big {
+
+		height: auto;
+		width: calc(100% - 8px);
+		margin: 4px;
+
+		}
+
+	.small {
+
+			height: auto;
+			width: calc(33.24% - 9.999999px);
+			margin: 4px;
+
+			}
+
+	#sides {
+
+			width: 700px;
+			margin: auto;
+
+			}
+
+	</style>
+
+</head>
+
+<body>
+
+	<div id="sides">
+
+	<h1>Picturegram</h1>
+
+	<img src="ew.jpg" id="big">
+	<img src="1.jpg" class="small">
+	<img src="2.jpg" class="small">
+	<img src="3.jpg" class="small">
+	<img src="4.jpg" class="small">
+	<img src="5.jpg" class="small">
+	<img src="6.jpg" class="small">
+	<img src="7.jpg" class="small">
+	<img src="8.jpg" class="small">
+	<img src="9.jpg" class="small">
+	<img src="10.jpg" class="small">
+	<img src="11.jpg" class="small">
+	<img src="12.jpg" class="small">
+	<img src="13.jpg" class="small">
+	<img src="14.jpg" class="small">
+	<img src="15.jpg" class="small">
+	<img src="16.jpg" class="small">
+	<img src="17.jpg" class="small">
+	<img src="18.jpg" class="small">
+	<img src="19.jpg" class="small">
+	<img src="20.jpg" class="small">
+	<img src="21.jpg" class="small">
+	<img src="22.jpg" class="small">
+	<img src="23.jpg" class="small">
+	<img src="24.jpg" class="small">
+	<img src="25.jpg" class="small">
+	<img src="26.jpg" class="small">
+	<img src="27.jpg" class="small">
+	<img src="28.jpg" class="small">
+	<img src="29.jpg" class="small">
+	<img src="30.jpg" class="small">
+	<img src="31.jpg" class="small">
+	<img src="32.jpg" class="small">
+	<img src="33.jpg" class="small">
+	<img src="37.jpg" class="small">
+	<img src="38.jpg" class="small">
+	<img src="39.jpg" class="small">
+
+	</div>
+
+	<script type="text/javascript">
+		const bigImage = document.querySelector("#big");
+		const images = document.querySelectorAll(".small");
+
+		images.forEach(image => image.addEventListener("click", 
+			function(e) {
+				let clickedImage = e.target.src;
+				let swapImage = bigImage.src;
+				bigImage.src = clickedImage;
+				e.target.src = swapImage;
+			}
+			));
+
+	</script>
+
+</body>
+</html>
